@@ -20,8 +20,14 @@
 #message = f'Count to {count}. Multiply by {value}.'
 #print(message)
 
-width = 5
-height = 10
+#width = 5
+#height = 10
 
-print(f'The parimeter is {(2 * width) + (2 * height)} and the area is {width * height}.')
+#print(f'The parimeter is {(2 * width) + (2 * height)} and the area is {width * height}.')
 
+value = 'hi'
+
+print(f'.{value:<25}.')
+print(f'.{value:>25}.')
+print(f'.{value:^25}.')
+print(f'.{value:-^25}.')
