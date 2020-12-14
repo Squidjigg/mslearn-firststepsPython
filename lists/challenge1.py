@@ -13,11 +13,17 @@ for suit in suits:
 
 #print(cards)                           # debug
 print(f'There are {len(cards)} cards in the deck')
+print(cards)
+hand = []
 
-player_cards = random.choices(cards, k=5)
-cards_left = len(cards) - len(player_cards)
+while len(hand) < 5:
+    hand = random.choices(cards, k=5)
+    #cards.remove(hand)
+    #cards.remove(hand)
+    
+    #cards_left = len(cards) - len(player_cards)
 
 print('\nDealing...\n')
-print(f'There are {cards_left} in the deck.')
+print(f'There are {len(cards)} in the deck.')
 print('Player has the following cards in their hand:')
-print(player_cards)
+print(hand)
