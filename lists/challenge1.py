@@ -1,29 +1,32 @@
 import random
 
+# define variables
 suits = ['Spades', 'Clubs', 'Hearts', 'Diamonds']
 ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace']
-cards = []
+deck = []
 
 for suit in suits:
     for rank in ranks:
         #print(f'{rank} of {suit}')     # debug
         card = rank +' of '+ suit
-        #print(card)                    # debug
-        cards.append(card)
+        deck.append(card)
 
 #print(cards)                           # debug
-print(f'There are {len(cards)} cards in the deck')
-print(cards)
+print(f'There are {len(deck)} cards in the deck')
+#print(deck)                            # debug
+
 hand = []
 
+# deal out card for hand
 while len(hand) < 5:
-    hand = random.choices(cards, k=5)
-    #cards.remove(hand)
-    #cards.remove(hand)
+    hand = random.choices(deck, k=5)
     
-    #cards_left = len(cards) - len(player_cards)
+    # remove cards dealt from main deck
+for card_in_hand in hand:
+    deck.remove(card_in_hand)
 
 print('\nDealing...\n')
-print(f'There are {len(cards)} in the deck.')
+print(f'There are {len(deck)} in the deck.')
 print('Player has the following cards in their hand:')
-print(hand)
+print(f'{hand}\n')
+#print(deck)                            # debug
