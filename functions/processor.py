@@ -1,7 +1,12 @@
-def process_numbers(**numargs):
+def process_numbers(numargs):
     numbers = []
 
-    for item in numargs.items():
- 
+    for item in numargs: #items():
+        #if item.isnumeric():
+        numbers.append(item)
+        print(type(item))
+        #else:
+         #   continue
 
-return numbers
+    #numbers.sort()
+    return numbers
