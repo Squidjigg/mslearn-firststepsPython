@@ -1,12 +1,15 @@
 def process_numbers(numargs):
     numbers = []
 
-    for item in numargs: #items():
-        #if item.isnumeric():
-        numbers.append(item)
-        print(type(item))
-        #else:
-         #   continue
+    if isinstance(numargs, list) != False:
+        for item in numargs:
+            if isinstance(item, int) == False:
+                #numbers.remove(item)
+                continue
+            numbers.append(item)
+            #numbers.remove(item)
 
-    #numbers.sort()
+            print(type(item))
+
+    numbers.sort()
     return numbers

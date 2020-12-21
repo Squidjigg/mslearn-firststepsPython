@@ -9,8 +9,8 @@ print(numbers)
 #names = processor.process_names(my_list)
 #print(names)
 
-#numbers = processor.process_numbers(my_bad_list)
-#print(numbers)
+numbers = processor.process_numbers(my_bad_list)
+print(numbers)
 
 #names = processor.process_names(my_bad_list)
 #print(names)
