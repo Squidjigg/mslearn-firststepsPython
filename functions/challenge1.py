@@ -6,11 +6,11 @@ my_bad_list = 5
 numbers = processor.process_numbers(my_list)
 print(numbers)
 
-#names = processor.process_names(my_list)
-#print(names)
+names = processor.process_names(my_list)
+print(names)
 
 numbers = processor.process_numbers(my_bad_list)
 print(numbers)
 
-#names = processor.process_names(my_bad_list)
-#print(names)
+names = processor.process_names(my_bad_list)
+print(names)
